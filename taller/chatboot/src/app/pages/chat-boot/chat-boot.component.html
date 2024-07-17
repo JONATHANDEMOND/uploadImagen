@@ -1,0 +1,17 @@
+<div class="chat-container">
+    <div class="messages">
+      @for (item of messages; track item) {
+        <div [ngClass]="{'user-message': item.user, 'bot-message': !item.user}">
+          {{ item.text }}
+        </div>
+      }
+    </div>
+    <div class="input-container">
+      <input [(ngModel)]="inputText" (keyup.enter)="sendMessage()" placeholder="Type a message..."/>
+      <button (click)="sendMessage()">Send</button>
+    </div>
+    <br>
+  <button type="submit"[routerLink]="['/imagen',]">Regresar</button><br>
+  <br>
+  </div>
+  

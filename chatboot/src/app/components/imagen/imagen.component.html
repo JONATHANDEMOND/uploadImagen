@@ -1,6 +1,4 @@
 
-<!-- app.component.html -->
-
 <h3>AGREGA UNA IMAGEN</h3>
 <form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
   <label>Ingresar ID</label>
@@ -15,7 +13,10 @@
   <button type="submit">Guardar</button>
   <br>
   <br>
-  <button type="submit"[routerLink]="['formulario',]">VER</button><br>
+  <button type="submit"[routerLink]="['/formulario',]">VER</button><br>
   <br>
+  <br>
+  <br>
+  <button type="submit"[routerLink]="['/chat',]">Chat</button><br>
   <br>
 </form>
